@@ -1,8 +1,10 @@
 var btntranslate=document.querySelector("#btn-translate");
 var txtinput=document.querySelector("#txt-input");
-btntranslate.addEventListener("click", clickEventhandler);
+var outputdiv=document.querySelector("#output");
+
 
 function clickEventhandler(){
-    console.log("clicked");
-    console.log(txtinput.value);    
-} 
+    outputdiv.innerText="asdhbadb"+ txtinput.value ;   
+}
+
+btntranslate.addEventListener("click", clickEventhandler);
