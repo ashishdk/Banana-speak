@@ -9,8 +9,8 @@ function getTranslationURL(text){
     return serverURL+"?"+"text="+text
 }
 
-function errorHandler(){
-    console.log("error occured" + error);
+function errorHandler(error){
+    console.log("error occured " + error.Status);
     }
 
 function clickEventhandler(){
@@ -23,7 +23,7 @@ function clickEventhandler(){
             outputdiv.innerText=TranslatedTxt;
         }
         )
-    .cache(errorHandler)
+    .catch(errorHandler);
 }
 
 btntranslate.addEventListener("click", clickEventhandler);
