@@ -17,3 +17,12 @@ textarea{
     height:10vh;
     padding: 1rem;
 }
+.header{
+    height: 8rem;
+    background-color: 	#FFCC66;
+    text-align: center;
+    padding: 0rem;
+}
+.area1{
+ border-style: center; 
+}
